@@ -1,32 +1,30 @@
 <p align="center">
-  <img src="boot/boot_animation.gif" alt="AuraOS Boot Animation" width="300" style="border-radius:10px; background-color:#000;" />
+  <img src="boot/boot_animation.gif" alt="AuraOS Boot Animation" width="300" />
 </p>
 
-<h1 align="center" style="color:#00FF88;">🌌 AuraOS</h1>
-<p align="center" style="color:#FFFFFF;"><b>O melhor sistema operacional baseado em BSD e Linux — moderno, rápido e open source.</b></p>
+<h1 align="center">🌌 AuraOS</h1>
+<p align="center"><b>O melhor sistema operacional baseado em BSD e Linux — moderno, rápido e open source.</b></p>
 
 ---
 
-## 🔊 Sons de Boot e Alertas
+## 🔊 Sons e Links
 
 <p align="center">
-  <a href="https://www.soundjay.com/misc/sounds/startup-01.mp3" target="_blank" style="text-decoration:none;">
-    <span style="display:inline-block; background-color:#0ff; color:#000; padding:12px 25px; border-radius:8px; font-weight:bold; margin:5px; box-shadow: 0 0 10px #0ff;">
-      🎵 Som de Boot
-    </span>
-  </a>
 
-  <a href="https://www.soundjay.com/button/sounds/beep-07.mp3" target="_blank" style="text-decoration:none;">
-    <span style="display:inline-block; background-color:#f00; color:#fff; padding:12px 25px; border-radius:8px; font-weight:bold; margin:5px; box-shadow: 0 0 10px #f00;">
-      ⚠️ Som de Alerta
-    </span>
-  </a>
+<a href="https://www.soundjay.com/misc/sounds/startup-01.mp3" target="_blank">
+  🎵 <b>Boot Sound</b>
+</a>
+<br><br>
 
-  <a href="https://www.soundjay.com/button/sounds/button-3.mp3" target="_blank" style="text-decoration:none;">
-    <span style="display:inline-block; background-color:#ff0; color:#000; padding:12px 25px; border-radius:8px; font-weight:bold; margin:5px; box-shadow: 0 0 10px #ff0;">
-      💻 Som de Debug
-    </span>
-  </a>
+<a href="https://www.soundjay.com/button/sounds/beep-07.mp3" target="_blank">
+  ⚠️ <b>Alert Sound</b>
+</a>
+<br><br>
+
+<a href="https://www.soundjay.com/button/sounds/button-3.mp3" target="_blank">
+  💻 <b>Debug Sound</b>
+</a>
+
 </p>
 
 ---
@@ -80,31 +78,31 @@
 
 ---
 
-## ⚡ Links úteis
+## ⚡ Links Úteis
 
 <p align="center">
-  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-" target="_blank" style="text-decoration:none;">
-    <span style="display:inline-block; background-color:#111; color:#0ff; padding:12px 20px; border-radius:8px; font-weight:bold; margin:3px; box-shadow: 0 0 10px #0ff;">🌐 Repositório AuraOS</span>
-  </a>
 
-  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/tree/main/Source" target="_blank" style="text-decoration:none;">
-    <span style="display:inline-block; background-color:#111; color:#0ff; padding:12px 20px; border-radius:8px; font-weight:bold; margin:3px; box-shadow: 0 0 10px #0ff;">📂 Código Fonte</span>
-  </a>
+<a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-" target="_blank">
+  🌐 <b>Repositório AuraOS</b>
+</a>
+<br><br>
 
-  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/releases" target="_blank" style="text-decoration:none;">
-    <span style="display:inline-block; background-color:#111; color:#0ff; padding:12px 20px; border-radius:8px; font-weight:bold; margin:3px; box-shadow: 0 0 10px #0ff;">⬇️ Baixar Versão</span>
-  </a>
+<a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/tree/main/Source" target="_blank">
+  📂 <b>Código Fonte</b>
+</a>
+<br><br>
+
+<a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/releases" target="_blank">
+  ⬇️ <b>Baixar Versão</b>
+</a>
+
 </p>
 
 ---
 
 <p align="center">
-  <span style="color:#FF0000;">🌟</span>
-  <span style="color:#FF7F00;">🌟</span>
-  <span style="color:#FFFF00;">🌟</span>
-  <span style="color:#00FF00;">🌟</span>
-  <span style="color:#0000FF;">🌟</span>
-  <span style="color:#4B0082;">🌟</span>
+  <span>🌟🌟🌟🌟🌟🌟</span>
 </p>
 
+**Autor:** Gabriel / Enzo  
 **Sistema:** AuraOS – Open Source, modular e para aprendizado.
