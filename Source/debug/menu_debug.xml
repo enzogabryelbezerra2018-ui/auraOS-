@@ -1,0 +1,8 @@
+<DebugMenu>
+    <Title text="AURAOS DEBUG MODE" x="50%" y="5%" color="#FFFFFFFF"/>
+    <Option id="1" text="Ver logs do sistema" x="10%" y="20%" color="#FFFFFFFF"/>
+    <Option id="2" text="Testar hardware" x="10%" y="30%" color="#FFFFFFFF"/>
+    <Option id="3" text="Status do dispositivo" x="10%" y="40%" color="#FFFFFFFF"/>
+    <Option id="4" text="Reiniciar" x="10%" y="50%" color="#FFFFFFFF"/>
+    <Highlight color="#FF00FFFF" alpha="0.5"/>
+</DebugMenu>
