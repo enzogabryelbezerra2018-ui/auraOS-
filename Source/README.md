@@ -83,14 +83,20 @@ Código de fornecedores e bibliotecas de terceiros.
     <img src="https://img.shields.io/badge/🌐_Repositório-AuraOS-blue?style=for-the-badge" />
   </a>
   <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/tree/main/Source" target="_blank">
-    <img src="https://img.shields.io/badge/📂_Source_Code-View-green?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/📂_Código_Fonte-Source-green?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/releases" target="_blank">
+    <img src="https://img.shields.io/badge/⬇️_Baixar_Versão-Latest-orange?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/wiki" target="_blank">
+    <img src="https://img.shields.io/badge/📖_Documentação-Wiki-yellow?style=for-the-badge" />
   </a>
   <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/issues" target="_blank">
-    <img src="https://img.shields.io/badge/🐞_Bugs-Issues-red?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/🐞_Reportar_Bug-Issues-red?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/enzogabryelbezerra2018-ui" target="_blank">
+    <img src="https://img.shields.io/badge/👨‍💻_Desenvolvedor-Enzo_Gabriel-purple?style=for-the-badge" />
   </a>
 </p>
-<a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-" target="_blank">
-  <img src="https://img.shields.io/badge/AuraOS-v0.1.0-6A5ACD?style=for-the-badge&logo=linux&logoColor=white" />
-</a>
 **Autor:** Gabriel / Enzo  
 **Sistema:** AuraOS – Open Source, modular e para aprendizado.
