@@ -80,7 +80,7 @@ Código de fornecedores e bibliotecas de terceiros.
 ## 📌 Observações
 
 - Todos os arquivos estão **modulares**, permitindo atualização e manutenção fácil.  
-- Para iniciar o sistema, o **bootloader** chama `_start` em `boot_entry.S`, que inicializa CPU, memória, vetores de exceção e finalmente o kernel.  
+- O **bootloader** chama `_start` em `boot_entry.S`, que inicializa CPU, memória, vetores de exceção e finalmente o kernel.  
 - Os módulos podem ser ativados ou desativados via `sys_config_factory.cfg`.
 
 ---
@@ -114,5 +114,13 @@ Código de fornecedores e bibliotecas de terceiros.
 
 ---
 
-**Autor:** Gabriel / Enzo  
+## 📝 Créditos e Licença
+
+- Desenvolvido por **Gabriel / Enzo**  
+- Licenciado sob **MIT / BSD / Open Source**  
+- Respeita licenças de código de terceiros presentes na pasta `vendor/`  
+- Todos os módulos são de código aberto e podem ser modificados e redistribuídos conforme licenças.
+
+---
+
 **Sistema:** AuraOS – Open Source, modular e para aprendizado.
