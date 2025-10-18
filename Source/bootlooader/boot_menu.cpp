@@ -1,6 +1,7 @@
 #include "boot_menu.h"
 #include "boot_display.h"
 #include "boot_input.h"
+#include "boot_animations.h"
 #include <thread>
 #include <chrono>
 
@@ -9,10 +10,11 @@ BootMenu::BootMenu(const std::vector<std::string>& items)
 
 void BootMenu::render() {
     clear_screen();
+    fade_in_screen(200); // Fade de entrada
     for(size_t i = 0; i < menu_items.size(); i++) {
         bool highlight = (i == selected_index);
-        draw_button(5, 2 + i*2, menu_items[i].c_str(), highlight);
-        if(highlight) draw_arrow(2, 2 + i*2);
+        draw_button(5, 10 + i*2, menu_items[i].c_str(), highlight);
+        if(highlight) animate_arrow(2, 10 + i*2, 2);
     }
 }
 
@@ -33,10 +35,11 @@ void BootMenu::run() {
         if(btn == UP) move_up();
         else if(btn == DOWN) move_down();
         else if(btn == START) {
+            fade_out_screen(200);
             clear_screen();
-            draw_text(5, 5, ("Selecionado: " + menu_items[selected_index]).c_str(), TEXT_COLOR);
+            draw_text(5,5,("Selecionado: " + menu_items[selected_index]).c_str(), TEXT_COLOR);
             break;
         }
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        std::this_thread::sleep_for(std::chrono::milliseconds(MENU_DELAY_MS));
     }
 }
