@@ -1,0 +1,9 @@
+<BootMenu>
+    <Background color="#000000"/>
+    <Logo src="auraos_logo.png" x="10" y="1" width="20" height="5"/>
+    <MenuItem text="Iniciar AuraOS" x="5" y="10"/>
+    <MenuItem text="Recovery Mode" x="5" y="12"/>
+    <MenuItem text="Debug Mode" x="5" y="14"/>
+    <MenuItem text="Atualizar Bootloader" x="5" y="16"/>
+    <Arrow src="arrow.png" x="2" y="10"/>
+</BootMenu>
