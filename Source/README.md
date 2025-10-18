@@ -89,6 +89,8 @@ Código de fornecedores e bibliotecas de terceiros.
     <img src="https://img.shields.io/badge/🐞_Bugs-Issues-red?style=for-the-badge" />
   </a>
 </p>
-
+<a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-" target="_blank">
+  <img src="https://img.shields.io/badge/AuraOS-v0.1.0-6A5ACD?style=for-the-badge&logo=linux&logoColor=white" />
+</a>
 **Autor:** Gabriel / Enzo  
 **Sistema:** AuraOS – Open Source, modular e para aprendizado.
