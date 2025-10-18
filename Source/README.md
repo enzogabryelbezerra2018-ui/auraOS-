@@ -1,3 +1,15 @@
+<p align="center">
+  <img src="boot/logo.PNG" alt="AuraOS Logo" width="300" style="border-radius: 10px; background-color: #000000;" />
+</p>
+
+<h1 align="center">🌌 AuraOS</h1>
+
+<p align="center">
+  <b>O melhor sistema operacional baseado em BSD e Linux — moderno, rápido e open source.</b>
+</p>
+
+---
+
 # AuraOS - Source
 
 Este diretório contém todo o código-fonte do **AuraOS**, sistema operacional para dispositivos móveis baseado em **BSD e Linux**.  
@@ -78,6 +90,7 @@ Código de fornecedores e bibliotecas de terceiros.
 - Repositório principal: [AuraOS GitHub](https://github.com/enzogabryelbezerra2018-ui/auraOS-)
 
 ---
+
 <p align="center">
   <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Repositório-AuraOS-0A0A0A?style=for-the-badge&logo=github&logoColor=white" />
@@ -98,19 +111,8 @@ Código de fornecedores e bibliotecas de terceiros.
     <img src="https://img.shields.io/badge/👨‍💻_Desenvolvedor-Enzo_Gabriel-000000?style=for-the-badge&logo=github&logoColor=FFFFFF" />
   </a>
 </p>
-**Autor:** Gabriel / Enzo  
-**Sistema:** AuraOS – Open Source, modular e para aprendizado.
-
-<p align="center">
-  <img src="boot/logo.PNG" alt="AuraOS Logo" width="300" style="border-radius: 10px; background-color: #000000;" />
-</p>
-
-<h1 align="center">
-  🌌 AuraOS  
-</h1>
-
-<p align="center">
-  <b>O melhor sistema operacional baseado em BSD e Linux — moderno, rápido e open source.</b>
-</p>
 
 ---
+
+**Autor:** Gabriel / Enzo  
+**Sistema:** AuraOS – Open Source, modular e para aprendizado.
