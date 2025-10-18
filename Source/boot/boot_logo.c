@@ -1,9 +1,10 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "stb_image.h" // PNG real
+#include <unistd.h> // usleep
+#include "stb_image.h"
 
-// Estrutura de framebuffer
+// Framebuffer simplificado
 typedef struct {
     uint32_t width;
     uint32_t height;
@@ -12,23 +13,40 @@ typedef struct {
 
 // Variáveis de UI
 typedef struct {
-    int logo_x;       // Posição X do logo
-    int logo_y;       // Posição Y do logo
-    int logo_width;   // Largura do logo
-    int logo_height;  // Altura do logo
-    float alpha;      // Transparência do logo (0.0 a 1.0)
+    int logo_x;
+    int logo_y;
+    int logo_width;
+    int logo_height;
+    float alpha;      // Transparência (0.0 a 1.0)
 } BootUI;
 
-// Inicializa valores padrões da UI
+// Paleta de cores animadas
+uint32_t colors[] = {
+    0xFFFF0000, 0xFFFF7F00, 0xFFFFFF00, 0xFF00FF00,
+    0xFF00FFFF, 0xFF0000FF, 0xFFFF00FF, 0xFFFFFFFF
+};
+#define COLORS_COUNT (sizeof(colors)/sizeof(uint32_t))
+
+// Inicializa variáveis da UI
 void init_boot_ui(BootUI *ui, FrameBuffer *fb, int logo_width, int logo_height) {
     ui->logo_width = logo_width;
     ui->logo_height = logo_height;
     ui->logo_x = (fb->width - logo_width) / 2;
     ui->logo_y = (fb->height - logo_height) / 2;
-    ui->alpha = 1.0f;
+    ui->alpha = 0.0f; // começa transparente para efeito fade-in
 }
 
-// Desenha o logo no framebuffer com variáveis de UI
+// Desenha fundo animado
+void draw_background(FrameBuffer *fb, int frame) {
+    for (uint32_t y = 0; y < fb->height; y++) {
+        for (uint32_t x = 0; x < fb->width; x++) {
+            uint32_t color_index = (x + y + frame) % COLORS_COUNT;
+            fb->pixels[y * fb->width + x] = colors[color_index];
+        }
+    }
+}
+
+// Desenha logo no centro com transparência da UI
 void draw_logo_ui(FrameBuffer *fb, stbi_uc *img, BootUI *ui) {
     for (int y = 0; y < ui->logo_height; y++) {
         for (int x = 0; x < ui->logo_width; x++) {
@@ -47,18 +65,28 @@ void draw_logo_ui(FrameBuffer *fb, stbi_uc *img, BootUI *ui) {
     }
 }
 
-// Função principal de boot
+// Função principal do boot animado
 void boot_logo_main(FrameBuffer *fb) {
     stbi_image *img = stbi_load("logo.png");
     if (!img) {
-        printf("Erro: logo.png não encontrado ou inválido.\n");
+        printf("Erro: logo.png não encontrado.\n");
         return;
     }
 
     BootUI ui;
     init_boot_ui(&ui, fb, img->width, img->height);
 
-    draw_logo_ui(fb, img->data, &ui);
+    // Loop de animação
+    for (int frame = 0; frame < 100; frame++) {
+        draw_background(fb, frame);
+
+        // Fade-in do logo
+        ui.alpha = (frame < 50) ? (frame / 50.0f) : 1.0f;
+
+        draw_logo_ui(fb, img->data, &ui);
+
+        usleep(50000); // 20 FPS
+    }
 
     stbi_image_free(img);
 }
