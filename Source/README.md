@@ -78,6 +78,17 @@ Código de fornecedores e bibliotecas de terceiros.
 - Repositório principal: [AuraOS GitHub](https://github.com/enzogabryelbezerra2018-ui/auraOS-)
 
 ---
+<p align="center">
+  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Repositório-AuraOS-blue?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/tree/main/Source" target="_blank">
+    <img src="https://img.shields.io/badge/📂_Source_Code-View-green?style=for-the-badge" />
+  </a>
+  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/issues" target="_blank">
+    <img src="https://img.shields.io/badge/🐞_Bugs-Issues-red?style=for-the-badge" />
+  </a>
+</p>
 
 **Autor:** Gabriel / Enzo  
 **Sistema:** AuraOS – Open Source, modular e para aprendizado.
