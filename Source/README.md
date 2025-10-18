@@ -100,3 +100,17 @@ Código de fornecedores e bibliotecas de terceiros.
 </p>
 **Autor:** Gabriel / Enzo  
 **Sistema:** AuraOS – Open Source, modular e para aprendizado.
+
+<p align="center">
+  <img src="boot/logo.PNG" alt="AuraOS Logo" width="300" style="border-radius: 10px; background-color: #000000;" />
+</p>
+
+<h1 align="center">
+  🌌 AuraOS  
+</h1>
+
+<p align="center">
+  <b>O melhor sistema operacional baseado em BSD e Linux — moderno, rápido e open source.</b>
+</p>
+
+---
