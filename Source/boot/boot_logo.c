@@ -1,8 +1,7 @@
 #include <stdint.h>
-#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "stb_image.h" // Biblioteca leve para ler PNGs
+#include "stb_image.h" // Versão simplificada que criamos
 
 // Estrutura simplificada de framebuffer
 typedef struct {
@@ -11,8 +10,8 @@ typedef struct {
     uint32_t *pixels;
 } FrameBuffer;
 
-// Desenha uma imagem no centro da tela
-void draw_image_center(FrameBuffer *fb, uint8_t *img, int img_width, int img_height) {
+// Desenha a imagem no centro do framebuffer
+void draw_image_center(FrameBuffer *fb, stbi_uc *img, int img_width, int img_height) {
     int start_x = (fb->width - img_width) / 2;
     int start_y = (fb->height - img_height) / 2;
 
@@ -26,7 +25,7 @@ void draw_image_center(FrameBuffer *fb, uint8_t *img, int img_width, int img_hei
             uint8_t b = img[img_index + 2];
             uint8_t a = img[img_index + 3];
 
-            // Simples mistura de alfa
+            // Mistura simples de alfa
             if (a > 0) {
                 fb->pixels[fb_index] = (a << 24) | (r << 16) | (g << 8) | b;
             }
@@ -36,14 +35,11 @@ void draw_image_center(FrameBuffer *fb, uint8_t *img, int img_width, int img_hei
 
 // Função principal de exibição do logo
 void boot_logo_main(FrameBuffer *fb) {
-    int img_width, img_height, channels;
-    unsigned char *data = stbi_load("logo.png", &img_width, &img_height, &channels, 4);
-
-    if (data) {
-        draw_image_center(fb, data, img_width, img_height);
-        stbi_image_free(data);
+    stbi_image *img = stbi_load("logo.png"); // Carrega PNG da mesma pasta
+    if (img) {
+        draw_image_center(fb, img->data, img->width, img->height);
+        stbi_image_free(img);
     } else {
-        // Caso o logo não seja encontrado
-        printf("Erro: logo.png não encontrado.\n");
+        printf("Erro: logo.png não encontrado ou inválido.\n");
     }
 }
