@@ -1,0 +1,30 @@
+# welcome_for_the_first_time.toml
+# Configurações e mensagens de boas-vindas do AuraOS
+# Arquivo lido na primeira inicialização do sistema
+
+[system]
+name = "AuraOS"
+version = "0.1.0-alpha"
+first_boot = true
+language = "pt-BR"
+timezone = "America/Sao_Paulo"
+
+[welcome_message]
+title = "Bem-vindo ao AuraOS!"
+subtitle = "O sistema operacional modular, baseado em BSD e Linux"
+body = """
+Olá! Este é o AuraOS, seu novo sistema operacional.
+Explore os modos de inicialização, a Seven UI, NFC, Pico TTS e todas as funcionalidades.
+Você pode personalizar o sistema, acessar o código-fonte aberto e usar o modo de debug para testes avançados.
+"""
+
+[default_settings]
+theme = "dark"
+enable_tts = true
+enable_debug_mode = false
+default_volume = 50
+show_tutorial = true
+
+[shortcuts]
+help = "Pressione F1 para ajuda"
+debug_mode = "Segure Botão Ligar + Volume- por 15 segundos"
