@@ -8,11 +8,26 @@
 ---
 
 ## 🔊 Sons de Boot e Alertas
-Clique nos links abaixo para ouvir os sons simulando boot ou alerta:
 
-- [🎵 Som de Boot](https://www.soundjay.com/misc/sounds/startup-01.mp3)
-- [⚠️ Som de Alerta](https://www.soundjay.com/button/sounds/beep-07.mp3)
-- [💻 Som de Debug](https://www.soundjay.com/button/sounds/button-3.mp3)
+<p align="center">
+  <a href="https://www.soundjay.com/misc/sounds/startup-01.mp3" target="_blank" style="text-decoration:none;">
+    <span style="display:inline-block; background-color:#0ff; color:#000; padding:12px 25px; border-radius:8px; font-weight:bold; margin:5px; box-shadow: 0 0 10px #0ff;">
+      🎵 Som de Boot
+    </span>
+  </a>
+
+  <a href="https://www.soundjay.com/button/sounds/beep-07.mp3" target="_blank" style="text-decoration:none;">
+    <span style="display:inline-block; background-color:#f00; color:#fff; padding:12px 25px; border-radius:8px; font-weight:bold; margin:5px; box-shadow: 0 0 10px #f00;">
+      ⚠️ Som de Alerta
+    </span>
+  </a>
+
+  <a href="https://www.soundjay.com/button/sounds/button-3.mp3" target="_blank" style="text-decoration:none;">
+    <span style="display:inline-block; background-color:#ff0; color:#000; padding:12px 25px; border-radius:8px; font-weight:bold; margin:5px; box-shadow: 0 0 10px #ff0;">
+      💻 Som de Debug
+    </span>
+  </a>
+</p>
 
 ---
 
@@ -68,9 +83,17 @@ Clique nos links abaixo para ouvir os sons simulando boot ou alerta:
 ## ⚡ Links úteis
 
 <p align="center">
-  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-" target="_blank">🌐 Repositório AuraOS</a> |
-  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/tree/main/Source" target="_blank">📂 Código Fonte</a> |
-  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/releases" target="_blank">⬇️ Baixar Versão</a>
+  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-" target="_blank" style="text-decoration:none;">
+    <span style="display:inline-block; background-color:#111; color:#0ff; padding:12px 20px; border-radius:8px; font-weight:bold; margin:3px; box-shadow: 0 0 10px #0ff;">🌐 Repositório AuraOS</span>
+  </a>
+
+  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/tree/main/Source" target="_blank" style="text-decoration:none;">
+    <span style="display:inline-block; background-color:#111; color:#0ff; padding:12px 20px; border-radius:8px; font-weight:bold; margin:3px; box-shadow: 0 0 10px #0ff;">📂 Código Fonte</span>
+  </a>
+
+  <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-/releases" target="_blank" style="text-decoration:none;">
+    <span style="display:inline-block; background-color:#111; color:#0ff; padding:12px 20px; border-radius:8px; font-weight:bold; margin:3px; box-shadow: 0 0 10px #0ff;">⬇️ Baixar Versão</span>
+  </a>
 </p>
 
 ---
