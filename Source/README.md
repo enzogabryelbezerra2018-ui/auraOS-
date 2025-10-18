@@ -87,10 +87,6 @@ Código de fornecedores e bibliotecas de terceiros.
 
 ## ⚡ Links úteis
 
-- Repositório principal: [AuraOS GitHub](https://github.com/enzogabryelbezerra2018-ui/auraOS-)
-
----
-
 <p align="center">
   <a href="https://github.com/enzogabryelbezerra2018-ui/auraOS-" target="_blank">
     <img src="https://img.shields.io/badge/🌐_Repositório-AuraOS-0A0A0A?style=for-the-badge&logo=github&logoColor=white" />
