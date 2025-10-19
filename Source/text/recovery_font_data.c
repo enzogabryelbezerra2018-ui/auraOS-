@@ -4,7 +4,7 @@
 #include "font_def.h"
 #include "vga8x16_font.inc" // Inclui os 96 glifos ASCII (32 a 127)
 
-// Monta o array de glifos para o kernel
+// Array de glifos para o kernel
 const recovery_glyph_t g_recovery_font_data[RECOVERY_FONT_NUM_GLYPHS] = {
     { {0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00} },
     { {0x00,0x18,0x3C,0x3C,0x3C,0x18,0x18,0x18,0x18,0x00,0x18,0x18,0x00,0x00,0x00,0x00} },
@@ -22,8 +22,8 @@ const recovery_glyph_t g_recovery_font_data[RECOVERY_FONT_NUM_GLYPHS] = {
 // Perfil de fonte da Seven UI atualizado
 const SystemFontProfile_t g_seven_ui_font_profile = {
     .family_name = "VGA9x16",
-    .regular_path = "fonts/vga-9x16.ttf", // Aponta para o arquivo renomeado
-    .bold_path    = "fonts/vga-9x16.ttf", // Mesmo arquivo para bold
+    .regular_path = "fonts/vga-9x16.ttf",       // Arquivo regular
+    .bold_path    = "fonts/vga-9x16_bold.ttf",  // Arquivo bold atualizado
     .line_height_ratio = 1.0f,
     .antialiasing_mode = AA_MODE_NONE,
     .default_color_rgb = 0xFFFFFF
