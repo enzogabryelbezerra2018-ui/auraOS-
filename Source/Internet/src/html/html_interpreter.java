@@ -1,6 +1,12 @@
 public class HTMLInterpreter {
     public static LineData[] parseHTML(String html) {
-        // Converte HTML em linhas e cores para enviar para C UI
-        return new LineData[]{};
+        // Retorna linhas e cores para UI
+        // TODO: implementar parser simples que converte <b>, <i>, <a>
+        return new LineData[0];
     }
+}
+
+class LineData {
+    public String text;
+    public int color;
 }
