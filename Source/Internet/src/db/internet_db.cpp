@@ -7,7 +7,7 @@ struct PageRecord {
     std::string html_data;
 };
 
-std::vector<PageRecord> history;
+static std::vector<PageRecord> history;
 
 void cache_page(const std::string& url, const std::string& html_data) {
     history.push_back({url, html_data});
