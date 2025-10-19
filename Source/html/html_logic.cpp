@@ -29,6 +29,7 @@ size_t html_load_file_colored(const char* path, html_char_t* out_buffer, size_t 
     for (size_t i = 0; i < bytes_read; ++i) {
         char ch = ((char*)out_buffer)[i];
         out_buffer[i].ch = ch;
+        // Cor aleatória que muda a cada chamada
         out_buffer[i].color = colors[rand() % NUM_COLORS];
     }
     return bytes_read;
