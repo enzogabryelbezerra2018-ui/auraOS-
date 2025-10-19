@@ -1,0 +1,16 @@
+0x0000, // Linha 0
+0x0000, // Linha 1
+0x0660, // Linha 2   ░░██░░
+0x0660, // Linha 3   ░░██░░
+0x0FF8, // Linha 4   ▓▓▓▓▓▓
+0x0FF8, // Linha 5   ▓▓▓▓▓▓
+0x0FF8, // Linha 6   ▓▓▓▓▓▓
+0x0660, // Linha 7   ░░██░░
+0x0660, // Linha 8   ░░██░░
+0x0660, // Linha 9   ░░██░░
+0x0000, // Linha 10
+0x0000, // Linha 11
+0x0000, // Linha 12
+0x0000, // Linha 13
+0x0000, // Linha 14
+0x0000  // Linha 15
