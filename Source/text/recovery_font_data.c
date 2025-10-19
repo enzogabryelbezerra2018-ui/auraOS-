@@ -16,14 +16,14 @@ const recovery_glyph_t g_recovery_font_data[RECOVERY_FONT_NUM_GLYPHS] = {
     { {0x00,0x18,0x18,0x18,0x18,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00} },
     { {0x00,0x0C,0x18,0x30,0x30,0x30,0x30,0x30,0x30,0x30,0x18,0x0C,0x00,0x00,0x00,0x00} },
     { {0x00,0x30,0x18,0x0C,0x0C,0x0C,0x0C,0x0C,0x0C,0x0C,0x18,0x30,0x00,0x00,0x00,0x00} },
-    // ... continue aqui com todos os glifos ASCII 32–127
+    // ... continue com todos os glifos ASCII 32–127
 };
 
-// Perfil de fonte da Seven UI (opcional, pode manter padrão)
+// Perfil de fonte da Seven UI atualizado
 const SystemFontProfile_t g_seven_ui_font_profile = {
-    .family_name = "VGA8x16",
-    .regular_path = "fonts/vga8x16_regular.ttf",
-    .bold_path = "fonts/vga8x16_bold.ttf",
+    .family_name = "VGA9x16",
+    .regular_path = "fonts/vga-9x16.ttf", // Aponta para o arquivo renomeado
+    .bold_path    = "fonts/vga-9x16.ttf", // Mesmo arquivo para bold
     .line_height_ratio = 1.0f,
     .antialiasing_mode = AA_MODE_NONE,
     .default_color_rgb = 0xFFFFFF
