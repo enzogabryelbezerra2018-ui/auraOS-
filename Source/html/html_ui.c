@@ -10,9 +10,10 @@
 
 static int scroll_offset = 0;
 
+// Desenha buffer de caracteres coloridos na tela
 void html_draw_colored(html_char_t* buffer, size_t len) {
     int cur_x = 0;
-    int cur_y = -scroll_offset; // inicia com offset para scroll
+    int cur_y = -scroll_offset;
 
     for (size_t i = 0; i < len; ++i) {
         if (buffer[i].ch == '\n') {
@@ -21,7 +22,6 @@ void html_draw_colored(html_char_t* buffer, size_t len) {
             continue;
         }
 
-        // Desenha apenas se estiver dentro da tela
         if (cur_y >= 0 && cur_y < SCREEN_HEIGHT) {
             seven_ui_draw_char(buffer[i].ch, cur_x, cur_y, buffer[i].color);
         }
@@ -34,21 +34,35 @@ void html_draw_colored(html_char_t* buffer, size_t len) {
     }
 }
 
-// Função para aumentar scroll
-void html_scroll_down(int pixels) {
-    scroll_offset += pixels;
-}
-
-// Função para diminuir scroll
+// Scroll vertical
 void html_scroll_up(int pixels) {
     scroll_offset -= pixels;
     if (scroll_offset < 0) scroll_offset = 0;
 }
 
-// Função principal para abrir e desenhar HTML
+void html_scroll_down(int pixels) {
+    scroll_offset += pixels;
+}
+
+// Atualiza cores em tempo real
+void html_refresh_colors(html_char_t* buffer, size_t len) {
+    for (size_t i = 0; i < len; ++i) {
+        buffer[i].color = colors[rand() % NUM_COLORS];
+    }
+}
+
+// Função principal: abre, atualiza cores e desenha HTML
 void html_open_and_display(const char* path) {
-    html_char_t buffer[MAX_FILE_SIZE] = {0};
-    size_t len = html_load_file_colored(path, buffer, MAX_FILE_SIZE);
+    static html_char_t buffer[MAX_FILE_SIZE] = {0};
+    static size_t len = 0;
+    static int first_load = 1;
+
+    if (first_load) {
+        len = html_load_file_colored(path, buffer, MAX_FILE_SIZE);
+        first_load = 0;
+    } else {
+        html_refresh_colors(buffer, len); // muda cores dinamicamente
+    }
 
     html_draw_colored(buffer, len);
 }
