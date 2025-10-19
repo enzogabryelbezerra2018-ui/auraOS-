@@ -5,7 +5,7 @@
 #include <string.h>
 #include <time.h>
 
-#define MAX_FILE_SIZE 131072 // 128KB para arquivos maiores
+#define MAX_FILE_SIZE 1048576 // 1MB
 #define NUM_COLORS 8
 
 const uint32_t colors[NUM_COLORS] = {
@@ -31,21 +31,23 @@ size_t html_load_file_colored(const char* path, html_char_t* out_buffer, size_t 
     for (size_t i = 0; i < bytes_read; ++i) {
         char ch = ((char*)out_buffer)[i];
         out_buffer[i].ch = ch;
-        // Cor aleatória inicial
         out_buffer[i].color = colors[rand() % NUM_COLORS];
     }
     return bytes_read;
 }
 
-// Atualiza cores dinamicamente
-void html_refresh_colors(html_char_t* buffer, size_t len, int random_per_line) {
+// Atualiza cores dinamicamente, usando cache por linha
+void html_refresh_colors_cached(html_char_t* buffer, size_t len, size_t* line_cache, int random_per_line) {
     if (random_per_line) {
         size_t line_start = 0;
         for (size_t i = 0; i < len; ++i) {
             if (buffer[i].ch == '\n' || i == len - 1) {
-                uint32_t line_color = colors[rand() % NUM_COLORS];
-                for (size_t j = line_start; j <= i; ++j) {
-                    buffer[j].color = line_color;
+                if (!line_cache[line_start]) {
+                    uint32_t line_color = colors[rand() % NUM_COLORS];
+                    for (size_t j = line_start; j <= i; ++j) {
+                        buffer[j].color = line_color;
+                    }
+                    line_cache[line_start] = 1; // marca linha cacheada
                 }
                 line_start = i + 1;
             }
